@@ -1,19 +1,14 @@
 public class Productos{
-        private int IdProducto { get; set; }
-        private string Descripcion { get; set; }
-        private int Precio { get; set; }
-        public Productos(int idProducto, string descripcion, int precio){
-            IdProducto = idProducto;
-            Descripcion=descripcion;
-            Precio=precio;
+        private int idProducto;
+        private string? descripcion;
+        private int precio;
+        public Productos(){}
+        public Productos(int IdProducto, string? Descripcion, int Precio){
+            idProducto = IdProducto;
+            descripcion= Descripcion;
+            precio= Precio;
         }
-        public int GetIdProducto(){
-            return IdProducto;
-        }
-        public string? GetDescripcionProducto(){
-            return Descripcion;
-        }
-        public int GetPrecioProducto(){
-            return Precio;
-        }
+        public int IdProducto{ get => idProducto; set => idProducto=value; }
+        public string? Descripcion{ get => descripcion; set => descripcion=value; }
+        public int Precio{ get => precio; set => precio=value; }
     }
